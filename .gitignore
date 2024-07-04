@@ -1,0 +1,13 @@
+.idea
+.allure
+target
+.allure/
+alure-results/
+build/
+bin/
+out/
+logs/
+target/
+.classpath
+.project
+
