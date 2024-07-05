@@ -16,7 +16,7 @@ import static java.time.Duration.ofSeconds;
 public class Gestures extends Base {
     public static void main(String[] args) throws MalformedURLException {
 
-        AndroidDriver<AndroidElement> driver = capabilities();
+        AndroidDriver<AndroidElement> driver = capabilities("emulator");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         driver.findElementByXPath("//android.widget.TextView[@text='Views']").click();

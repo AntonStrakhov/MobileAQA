@@ -10,7 +10,7 @@ public class Uiautomatortest extends Base {
 
     public static void main(String[] args) throws MalformedURLException {
 
-        AndroidDriver<AndroidElement> driver = capabilities();
+        AndroidDriver<AndroidElement> driver = capabilities("emulator");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         //driver.findElementByAndroidUIAutomator("attribute("value")")
