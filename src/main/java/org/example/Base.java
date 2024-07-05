@@ -17,7 +17,8 @@ public class Base {
         AndroidDriver<AndroidElement> driver;
 
         File appDir = new File("src");
-        File app = new File(appDir, "ApiDemos-debug.apk");
+        //File app = new File(appDir, "ApiDemos-debug.apk");
+        File app = new File(appDir, "General-Store.apk");
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         if(device.equals("emulator")) {
