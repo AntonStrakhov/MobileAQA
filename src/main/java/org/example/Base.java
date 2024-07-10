@@ -1,5 +1,6 @@
 package org.example;
 
+import com.google.common.collect.ImmutableMap;
 import io.appium.java_client.Setting;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
@@ -33,6 +34,7 @@ public class Base {
         }
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");//new step
         capabilities.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
+        capabilities.setCapability("appium:chromeOptions", ImmutableMap.of("w3c", false));
 
         driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
         return driver;
