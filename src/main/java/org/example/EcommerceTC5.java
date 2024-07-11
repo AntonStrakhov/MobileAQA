@@ -20,6 +20,9 @@ public class EcommerceTC5 extends Base {
 
     public static void main(String[] args) throws MalformedURLException, InterruptedException {
 
+        //for this test needs to change chrome driver to 126 version here:
+        // C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-chromedriver\chromedriver\win
+
         AndroidDriver<AndroidElement> driver = capabilities("emulator");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
