@@ -16,8 +16,15 @@ public class ScrollIOSTest extends BaseIOSTest {
         HashMap<String, Object> scrollObject = new HashMap<>();
         scrollObject.put("direction", "down");
         scrollObject.put("name", "Web View");
-
         driver.executeScript("mobile:scroll", scrollObject);
         driver.findElementByAccessibilityId("Web View").click();
+
+        driver.findElementByXPath("//XCUIElementTypeButton[name='UIKitCatalog']").click();
+        driver.findElementByAccessibilityId("Picker View").click();
+
+        //picker wheels
+        driver.findElementByAccessibilityId("Red color component value").sendKeys("80");
+        driver.findElementByAccessibilityId("Green color component value").sendKeys("220");
+        driver.findElementByAccessibilityId("Blue color component value").sendKeys("105");
     }
 }
