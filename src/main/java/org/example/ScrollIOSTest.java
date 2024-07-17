@@ -4,7 +4,6 @@ import io.appium.java_client.ios.IOSDriver;
 
 import java.net.MalformedURLException;
 import java.util.HashMap;
-import java.util.Objects;
 
 public class ScrollIOSTest extends BaseIOSTest {
 
