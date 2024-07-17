@@ -22,6 +22,7 @@ public class BaseIOSTest {
         capabilities.setCapability("commandTimeouts", "12000");
 
         capabilities.setCapability(MobileCapabilityType.APP, "Users/astonuser/IdeaProjects/Tutorial/src/UIKitCatalog.app");
+        //capabilities.setCapability(MobileCapabilityType.APP, "Users/astonuser/IdeaProjects/Tutorial/src/LongTap.app");
         IOSDriver driver = new IOSDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 
         return driver;
